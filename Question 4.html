@@ -1,0 +1,14 @@
+<script>
+	function swapFirstAndLast(arr) {
+  var temp = arr[0];
+  arr[0] = arr[arr.length - 1];
+  arr[arr.length - 1] = temp;
+  return arr;
+}
+
+var numbers = [1, 2, 3, 4, 5];
+var swappedNumbers = swapFirstAndLast(numbers);
+
+console.log(swappedNumbers);
+
+</script>

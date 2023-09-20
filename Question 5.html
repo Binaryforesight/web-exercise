@@ -1,0 +1,28 @@
+<script>
+  function removeDuplicates(str) {
+  var charCount = {};
+  var result = '';
+
+  // Count the occurrences of each character
+  for (var i = 0; i < str.length; i++) {
+    var char = str[i];
+    charCount[char] = (charCount[char] || 0) + 1;
+  }
+
+  // Build the result string, excluding characters with count > 1
+  for (var j = 0; j < str.length; j++) {
+    var char = str[j];
+    if (charCount[char] === 1) {
+      result += char;
+    }
+  }
+
+  return result;
+}
+
+// Example usage
+var input = 'Hello, World!';
+var output = removeDuplicates(input);
+console.log(output); // Output: H, Wrld!
+
+</script>

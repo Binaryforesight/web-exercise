@@ -1,0 +1,21 @@
+<script>
+	function celsiusToFahrenheit(celsius) {
+  var fahrenheit = (celsius * 9 / 5) + 32;
+  return fahrenheit;
+}
+
+function fahrenheitToCelsius(fahrenheit) {
+  var celsius = (fahrenheit - 32) * 5 / 9;
+  return celsius;
+}
+
+var celsiusTemp = 60;
+var fahrenheitTemp = 45;
+
+var celsiusToFahrenheitResult = celsiusToFahrenheit(celsiusTemp);
+var fahrenheitToCelsiusResult = fahrenheitToCelsius(fahrenheitTemp);
+
+console.log(celsiusTemp + '°C is ' + celsiusToFahrenheitResult + '°F');
+console.log(fahrenheitTemp + '°F is ' + fahrenheitToCelsiusResult + '°C');
+
+</script>

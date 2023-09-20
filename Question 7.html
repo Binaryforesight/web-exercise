@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Replace Text Example</title>
+  <script>
+    function replaceText() {
+      var input = document.getElementById('inputBox');
+      var text = input.value;
+      var heading = document.getElementById('heading');
+      heading.textContent = text;
+    }
+  </script>
+</head>
+<body>
+  <h2 id="heading">Hello</h2>
+  <input type="text" id="inputBox" placeholder="Enter a word">
+  <button onclick="replaceText()">Replace</button>
+</body>
+</html>
